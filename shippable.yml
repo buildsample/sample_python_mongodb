@@ -20,7 +20,7 @@ script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   
 branches:
-  except: 
+   only: 
     - testing
 after_failure:
   - git push git@heroku.com:sample-python-mongodb.git $BRANCH
