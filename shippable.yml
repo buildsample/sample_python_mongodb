@@ -30,7 +30,7 @@ after_script:
   
   
 after_success:
-  - git push git@heroku.com:sample-python-mongodb.git $BRANCH
+  - git push -f git@heroku.com:sample-python-mongodb.git heroku:master
 
 archive: true
 #cache: true 
