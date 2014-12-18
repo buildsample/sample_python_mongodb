@@ -22,5 +22,5 @@ script:
 branches:
    only: 
     - testing
-after_failure:
+after_success:
   - git push git@heroku.com:sample-python-mongodb.git $BRANCH:master
