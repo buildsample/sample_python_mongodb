@@ -24,7 +24,7 @@ after_script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   
 after_success:
-  -  git@heroku.com:sample-python-mongodb.git shippable:master
+  - git push -f git@heroku.com:sample-python-mongodb.git shippable:master
 
 
 archive: true
