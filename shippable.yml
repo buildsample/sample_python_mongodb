@@ -16,6 +16,7 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
+script: true
 
 after_script:
   - cp README.md ./shippable
