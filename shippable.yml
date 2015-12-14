@@ -26,10 +26,8 @@ script:
 after_script:
   - cp README.md ./shippable
   
-after_success:
-   - git push -f git@heroku.com:sample-python-mongodb.git shippable:master
-   - echo "Hi"
+
 
 archive: true
 #cache: true 
-build_image: drydock/u14pytpls:tip
+build_image: drydock/u12pytpls:tip
