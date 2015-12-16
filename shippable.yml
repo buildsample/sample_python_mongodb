@@ -20,9 +20,6 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 
-branches:
-  only: 
-    - master
 
 after_script:
   - cp README.md ./shippable
@@ -33,4 +30,4 @@ after_script:
 archive: true
 #cache: true 
 
-build_image: drydock/u14pytpls:tip
+build_image: drydock/u12pytall:tip
