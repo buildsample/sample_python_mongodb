@@ -26,7 +26,7 @@ after_script:
   - cp README.md ./shippable
   
 after_success:
-  - git push -f git@heroku.com:sample-python-mongodb.git heroku:master
+  - git push -f git@heroku.com:python-mongodb-prod.git heroku:master
 
 
 archive: true
